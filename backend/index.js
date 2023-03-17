@@ -17,7 +17,15 @@ import salesRoutes from './routes/salesRoute.js';
 import User from './models/User.js';
 import Product from './models/Product.js';
 import ProductStat from './models/ProductStat.js';
-import { dataUser, dataProduct, dataProductStat } from './data/index.js';
+import Transaction from './models/Transaction.js';
+import OverviewStat from './models/OverallStat.js';
+import {
+  dataUser,
+  dataProduct,
+  dataProductStat,
+  dataTransaction,
+  dataOverallStat,
+} from './data/index.js';
 
 /**
  * CONFIGURATIONS
@@ -58,7 +66,9 @@ mongoose
        */
       // User.insertMany(dataUser);
       // Product.insertMany(dataProduct);
+      // Transaction.insertMany(dataTransaction);
       // ProductStat.insertMany(dataProductStat);
+      // OverviewStat.insertMany(dataOverallStat);
     });
   })
   .catch(function (error) {

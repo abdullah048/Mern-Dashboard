@@ -66,7 +66,7 @@ function Navbar({ isSidebarOpen, setIsSidebarOpen, user }) {
             backgroundColor={theme.palette.background.alt}
             borderRadius='9px'
             gap='3rem'
-            p='0.1 rem 1.5rem'>
+            p='0.1rem 0.7rem'>
             <InputBase placeholder='Search...' />
             <IconButton>
               <Search />
