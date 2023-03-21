@@ -19,6 +19,9 @@ import CustomerPage from './pages/customers';
 import Transactions from './pages/transactions';
 import Geography from './pages/geography';
 import Overview from './pages/overview';
+import Daily from './pages/daily';
+import Monthly from './pages/monthly';
+import Breakdown from './pages/breakdown';
 
 function App() {
   const mode = useSelector(function (state) {
@@ -44,6 +47,9 @@ function App() {
               <Route path='/transactions' element={<Transactions />} />
               <Route path='/geography' element={<Geography />} />
               <Route path='/overview' element={<Overview />} />
+              <Route path='/daily' element={<Daily />} />
+              <Route path='/monthly' element={<Monthly />} />
+              <Route path='/breakdown' element={<Breakdown />} />
             </Route>
           </Routes>
         </ThemeProvider>
