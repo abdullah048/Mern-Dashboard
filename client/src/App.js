@@ -22,6 +22,8 @@ import Overview from './pages/overview';
 import Daily from './pages/daily';
 import Monthly from './pages/monthly';
 import Breakdown from './pages/breakdown';
+import Admins from './pages/admin';
+import UserPerformance from './pages/user-performance';
 
 function App() {
   const mode = useSelector(function (state) {
@@ -50,6 +52,8 @@ function App() {
               <Route path='/daily' element={<Daily />} />
               <Route path='/monthly' element={<Monthly />} />
               <Route path='/breakdown' element={<Breakdown />} />
+              <Route path='/admin' element={<Admins />} />
+              <Route path='/performance' element={<UserPerformance />} />
             </Route>
           </Routes>
         </ThemeProvider>
